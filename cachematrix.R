@@ -39,7 +39,7 @@ cacheSolve <- function(x, ...) {
         }
         ## if not, calculate the inverse here:
         data <- x$get()
-        i <- solve(x, ...)
+        i <- solve(data, ...)
         ## set the value of the inverse in the cache via the "setinverse" function
         x$setinverse(i)
         i
